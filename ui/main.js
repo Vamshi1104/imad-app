@@ -2,9 +2,9 @@ console.log('Loaded!');
 var element=document.getElementById('main-text');
 element.innerHTML="vamshi";
 var element=document.getElementById('madi');
-var marginLeft=10;
+var marginLeft=0;
 function moveRight(){
-    
+    marginLeft=marginLeft+10;
     madi.style.marginLeft=marginLeft + 'px';
 }
 
