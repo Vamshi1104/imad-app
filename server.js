@@ -13,9 +13,6 @@ app.get('/counter', function timepass(req, res) {
     counter=counter+1;
   res.send(counter.toString());
 });
-img.onclick=function(){
-   var interval=setInterval(timepass,100);
-};
 
 
 app.get('/ui/main.js', function (req, res) {
