@@ -9,10 +9,14 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var counter=0;
-app.get('/counter', function (req, res) {
+app.get('/counter', function timepass(req, res) {
     counter=counter+1;
   res.send(counter.toString());
 });
+img.onclick=function(){
+   var interval=setInterval(timepass,100);
+};
+
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
